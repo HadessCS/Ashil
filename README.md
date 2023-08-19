@@ -1,4 +1,4 @@
-### Ashil
+# Ashil
 
 <img src="./ashil-logo.jpg" alt="HADESS" width="200"/>
 
@@ -83,6 +83,4 @@ We welcome contributions to Ashill! If you encounter any issues, have suggestion
 
 Ashill is released under the [MIT License](LICENSE).
 
----
 
-Happy coding and secure programming with Ashill!
