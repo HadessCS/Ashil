@@ -15,46 +15,74 @@ Brought to you by:
 
 [HADESS](https://hadess.io) performs offensive cybersecurity services through infrastructures and software that include vulnerability analysis, scenario attack planning, and implementation of custom integrated preventive projects. We organized our activities around the prevention of corporate, industrial, and laboratory cyber threats.
 
-## Installation
+## Getting Started
+
+To use Ashill, follow these steps:
+
+1. Clone this repository to your local machine.
+2. Open a terminal window and navigate to the root directory of the cloned repository.
+
+### Building Ashill
+
+To build Ashill, use the following command:
+
+```sh
+cargo build
+```
+
+### Running Ashill
+
+To run Ashill, use the following command:
+
+```sh
+cargo run
+```
+
+### Welcome Message
+
+Upon running Ashill, you will be greeted with the following welcome message:
 
 ```
-pip install -r requirements.txt  
-python main.py
-```
+Welcome to Ashill - LLM Static Application Security Test Scanner
 
-## Command Line Options
-```
-          
-	  --help                       Display help
-	  --path  					   Required path of apk file
-	  --manifest  				   Display manifest informations
-	  --infra  					   Find all infra addresses included ip,domain ex. --infra ip,domain
-	  --whoise  				   Whoise all infra included ip,domain ex. --whoise ip,domain
-	  --output  				   Set output files ex. --output out.txt
-	 
+       / \__
+      (    @\___
+      /         O
+     /   (_____/ 
+    /_____/   U
+    
+Usage: ashill [OPTIONS]
+
+Options:
+  --help     Show this help message and exit
+  --path     Specify the path to the LLM project directory
 ```
 
 ## Usage
 
-### Display Manifest
+To use Ashill effectively, you can provide additional options while running the scanner. Currently, Ashill supports the following options:
 
-[![asciicast](https://asciinema.org/a/592332.svg)](https://asciinema.org/a/592332)
+- `--help`: Show the help message and exit.
+- `--path`: Specify the path to the LLM project directory.
 
-### IP Whois
+For example, you can run Ashill with the `--path` option to scan a specific LLM project directory:
 
-[![asciicast](https://asciinema.org/a/592335.svg)](https://asciinema.org/a/592335)
-
-Example Usage:
-
-1.Find infra(domain and ip) in sample4.apk and set output result into out.txt
-
-```
-python3 main.py --path sample4.apk --infra domain,ip --output out.txt
+```sh
+cargo run -- --path /path/to/your/llm/project
 ```
 
+## About Ashill
 
-2. Investigate the Domain and IP on the APK
+Ashill is developed as a tool to enhance the security of LLM applications by identifying potential vulnerabilities early in the development process. It utilizes static code analysis techniques to scan your LLM codebase and provides insights into possible security issues.
 
-```
-python3 main.py --path sample.apk --whois ip
-```
+## Contribution
+
+We welcome contributions to Ashill! If you encounter any issues, have suggestions, or want to improve the tool, please feel free to contribute by submitting pull requests or opening issues on the [GitHub repository](https://github.com/your-username/ashill).
+
+## License
+
+Ashill is released under the [MIT License](LICENSE).
+
+---
+
+Happy coding and secure programming with Ashill!
